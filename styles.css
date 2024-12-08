@@ -121,8 +121,14 @@ dialog {
 
 fieldset {
   display: flex;
-  gap: 30px;
+  row-gap: 20px;
+  column-gap: 30px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+legend {
+  white-space: nowrap;
 }
 
 input {
@@ -174,4 +180,10 @@ h3 span {
 
 p {
   display: none;
+}
+
+@media (max-width: 500px) {
+  fieldset {
+    width: min-content;
+  }
 }
